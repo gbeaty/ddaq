@@ -1,0 +1,274 @@
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388092125339"><stats time="21" expectations="3" successes="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388117506599"><stats time="15" expectations="3" successes="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388117568859"><stats time="16" expectations="3" successes="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388117808505"><stats time="12" expectations="3" successes="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388183887093"><stats time="23" expectations="1" successes="1" examples="1"><trend><stats time="23" expectations="-2" successes="-2" examples="-2"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388183915263"><stats time="14" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388270773354"><stats time="19" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388274119872"><stats time="13" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388275619345"><stats time="11" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1388275625943"><stats time="15" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389514018938"><stats time="26" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389518693501"><stats time="13" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389518825082"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="70" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389518825093"><stats time="12" expectations="1" failures="1" examples="1"><trend><stats time="12" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389518855463"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="30" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389518855478"><stats time="15" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389518900475"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="58" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389518900493"><stats time="12" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389519188254"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="76" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519188261"><stats time="12" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389519261693"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="95" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519261697"><stats time="15" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389519343080"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="23" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519343097"><stats time="15" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389519359678"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="38" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519359685"><stats time="11" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389519403462"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:23)" id="950074687"><stats time="81" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519403468"><stats time="10" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389519415264"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="55" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519415269"><stats time="11" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519701892"><stats time="11" expectations="1" successes="1" examples="1"><trend><stats time="11" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389519710525"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:22)" id="950074687"><stats time="39" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519710529"><stats time="14" expectations="1" failures="1" examples="1"><trend><stats time="14" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389519715178"><stats time="13" expectations="1" successes="1" examples="1"><trend><stats time="13" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389916256033"><stats time="21" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389951767090"><stats time="24" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389951903426"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:30)" id="3267882"><stats time="40" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389951903436"><stats time="13" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="13" expectations="1" failures="1" examples="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389951938223"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:30)" id="3267882"><stats time="79" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389951938229"><stats time="10" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389951963239"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:30)" id="3267882"><stats time="71" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389951963244"><stats time="12" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389952008977"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:30)" id="3267882"><stats time="79" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389952008982"><stats time="16" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389952024895"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:30)" id="3267882"><stats time="61" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389952024901"><stats time="12" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389952036800"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:30)" id="3267882"><stats time="52" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389952036807"><stats time="15" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389952497239"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:30)" id="3267882"><stats time="79" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389952497245"><stats time="13" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389952947892"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:34)" id="3267882"><stats time="108" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389952947897"><stats time="14" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389953171182"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:34)" id="3267882"><stats time="75" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389953171187"><stats time="15" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389953188149"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:34)" id="3267882"><stats time="48" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389953188155"><stats time="14" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389953970224"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:37)" id="3267882"><stats time="82" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389953970231"><stats time="41" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389954000193"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:37)" id="3267882"><stats time="46" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389954000199"><stats time="14" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389954003486"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:37)" id="3267882"><stats time="77" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389954003492"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389954173709"><stats time="11" expectations="2" successes="2" examples="2"><trend><stats time="11" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389954203687"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:37)" id="3267882"><stats time="73" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389954203692"><stats time="13" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="13" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389955035766"><stats time="12" expectations="2" successes="2" examples="2"><trend><stats time="12" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389955155351"><stats time="12" expectations="2" successes="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389955170809"><stats time="15" expectations="2" successes="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389955389231"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:37)" id="3267882"><stats time="81" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389955389237"><stats time="13" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="13" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389955413630"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:37)" id="3267882"><stats time="69" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389955413636"><stats time="15" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389961073595"><stats time="15" expectations="2" successes="2" examples="2"><trend><stats time="15" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389961349389"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:37)" id="3267882"><stats time="42" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389961349400"><stats time="13" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="13" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389961356320"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:37)" id="3267882"><stats time="95" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389961356331"><stats time="21" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389961427075"><stats time="12" expectations="2" successes="2" examples="2"><trend><stats time="12" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389961671961"><stats time="12" expectations="2" successes="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389961719926"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="85" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389961719935"><stats time="12" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="12" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389961750686"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="119" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389961750695"><stats time="14" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389962549466"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="99" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389962549478"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1389962665219"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="100" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1389962665228"><stats time="13" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390033703070"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="58" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390033703093"><stats time="17" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390034663114"><stats time="12" expectations="2" successes="2" examples="2"><trend><stats time="12" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390034908323"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="82" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390034908334"><stats time="12" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="12" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390036081249"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="79" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390036081259"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390037236181"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="61" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390037236191"><stats time="12" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390037248259"><stats time="13" expectations="2" successes="2" examples="2"><trend><stats time="13" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390037283054"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="82" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390037283065"><stats time="12" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="12" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390037339180"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:36)" id="3267882"><stats time="55" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390037339190"><stats time="13" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390047175084"><stats time="14" expectations="1" successes="1" examples="1"><trend><stats time="14" expectations="-1" failures="-1" examples="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390047511103"><stats time="16" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390047555060"><stats time="13" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390047564062"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:52)" id="103785528"><stats time="84" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390047564071"><stats time="14" expectations="1" failures="1" examples="1"><trend><stats time="14" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390047568445"><stats time="12" expectations="1" successes="1" examples="1"><trend><stats time="12" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390048122854"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:56)" id="3267882"><stats time="76" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390048122864"><stats time="13" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="13" expectations="1" failures="1" examples="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390048705534"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:53)" id="103785528"><stats time="72" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:56)" id="3267882"><stats time="70" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390048705543"><stats time="12" expectations="2" failures="2" examples="2"><trend><stats time="12" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390048739695"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:53)" id="103785528"><stats time="104" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:56)" id="3267882"><stats time="104" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390048739704"><stats time="13" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390049168351"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="78" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="77" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390049168359"><stats time="14" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390049328429"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="115" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="112" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390049328438"><stats time="12" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390049572192"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="110" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="109" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390049572200"><stats time="9" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390049677334"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:56)" id="103785528"><stats time="78" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:59)" id="3267882"><stats time="76" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390049677346"><stats time="9" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390049994106"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="71" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="70" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390049994116"><stats time="10" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390050043803"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="112" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="110" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390050043813"><stats time="12" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390050122855"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="42" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:58)" id="3267882"><stats time="41" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390050122883"><stats time="9" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390050557454"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="103" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:58)" id="3267882"><stats time="100" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390050557474"><stats time="12" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390050570711"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="107" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:58)" id="3267882"><stats time="103" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390050570725"><stats time="11" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390050950132"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="115" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:59)" id="3267882"><stats time="113" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390050950146"><stats time="8" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390115657540"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="83" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:59)" id="3267882"><stats time="81" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390115657565"><stats time="15" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390116027600"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="55" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="55" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390116027616"><stats time="9" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390116045354"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="81" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:59)" id="3267882"><stats time="81" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390116045368"><stats time="8" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390128905564"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="101" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="100" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390128905578"><stats time="9" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390129063830"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="100" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390129063851"><stats time="8" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="8" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390129215985"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="96" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="92" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390129215997"><stats time="12" expectations="2" failures="2" examples="2"><trend><stats time="12" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390129240832"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="103785528"><stats time="96" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="3267882"><stats time="95" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390129240844"><stats time="10" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390129417612"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="3655441"><stats time="114" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="103785528"><stats time="114" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="112" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390129417622"><stats time="10" expectations="3" failures="3" examples="3"><trend><stats time="10" expectations="1" failures="1" examples="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390130705019"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="103785528"><stats time="77" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="77" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130705029"><stats time="10" expectations="3" failures="2" successes="1" examples="3"><trend><stats time="10" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390130720263"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="102" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130720272"><stats time="10" expectations="3" failures="1" successes="2" examples="3"><trend><stats time="10" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130731525"><stats time="10" expectations="3" successes="3" examples="3"><trend><stats time="10" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130746851"><stats time="10" expectations="3" successes="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130761121"><stats time="9" expectations="3" successes="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130774100"><stats time="10" expectations="3" successes="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130791710"><stats time="9" expectations="3" successes="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390130932640"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="3655441"><stats time="87" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130932650"><stats time="10" expectations="3" failures="1" successes="2" examples="3"><trend><stats time="10" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390130945225"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="3655441"><stats time="70" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:58)" id="103785528"><stats time="69" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:61)" id="3267882"><stats time="67" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390130945234"><stats time="9" expectations="3" failures="3" examples="3"><trend><stats time="9" failures="2" successes="-2"></stats></trend></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390131024218"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="3655441"><stats time="107" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="103785528"><stats time="101" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="101" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390131024229"><stats time="10" expectations="3" failures="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390131116066"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="3655441"><stats time="79" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="103785528"><stats time="78" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="78" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390131116077"><stats time="10" expectations="3" failures="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390131126035"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="3655441"><stats time="82" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="103785528"><stats time="81" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="77" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390131126041"><stats time="14" expectations="3" failures="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390132837237"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="3655441"><stats time="104" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="103785528"><stats time="103" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="102" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390132837244"><stats time="11" expectations="3" failures="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>
+<ddaq.displayController.HelloWorldSpec-results timestamp="1390132848987"><result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:54)" id="3655441"><stats time="368" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:57)" id="103785528"><stats time="365" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.HelloWorldSpec (Notifications.scala:60)" id="3267882"><stats time="364" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.HelloWorldSpec-results>
+<ddaq.displayController.HelloWorldSpec-stats timestamp="1390132848993"><stats time="15" expectations="3" failures="3" examples="3"></stats></ddaq.displayController.HelloWorldSpec-stats>

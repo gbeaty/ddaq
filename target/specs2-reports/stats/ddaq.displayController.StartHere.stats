@@ -1,0 +1,174 @@
+<ddaq.displayController.StartHere-stats timestamp="1390135144351"><stats time="17" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390135206587"><result location="ddaq.displayController.StartHere (Notifications.scala:15)" id="2163699"><stats time="79" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390135206591"><stats time="12" expectations="1" failures="1" examples="1"><trend><stats time="12" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390135220779"><result location="ddaq.displayController.StartHere (Notifications.scala:15)" id="2163699"><stats time="67" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390135220786"><stats time="12" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390135305905"><result location="ddaq.displayController.StartHere (Notifications.scala:15)" id="2163699"><stats time="76" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390135305915"><stats time="12" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390135354464"><result location="ddaq.displayController.StartHere (Notifications.scala:15)" id="2163699"><stats time="95" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390135354471"><stats time="12" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390137583550"><result location="ddaq.displayController.StartHere (Notifications.scala:15)" id="2163699"><stats time="62" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390137583572"><stats time="19" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390137610877"><result location="ddaq.displayController.StartHere (Notifications.scala:15)" id="2163699"><stats time="72" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390137610887"><stats time="13" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390137821781"><result location="ddaq.displayController.StartHere (Notifications.scala:15)" id="2163699"><stats time="94" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390137821794"><stats time="11" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390138036495"><result location="ddaq.displayController.StartHere (Notifications.scala:13)" id="2163699"><stats time="97" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390138036500"><stats time="12" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139275773"><stats time="11" expectations="1" successes="1" examples="1"><trend><stats time="11" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139282031"><result location="ddaq.displayController.StartHere (Notifications.scala:13)" id="2163699"><stats time="165" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139282035"><stats time="16" expectations="1" failures="1" examples="1"><trend><stats time="16" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139286683"><stats time="12" expectations="1" successes="1" examples="1"><trend><stats time="12" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139289143"><stats time="12" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139294617"><result location="ddaq.displayController.StartHere (Notifications.scala:13)" id="2163699"><stats time="159" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139294621"><stats time="11" expectations="1" failures="1" examples="1"><trend><stats time="11" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139312203"><stats time="13" expectations="1" successes="1" examples="1"><trend><stats time="13" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139333178"><stats time="13" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139342693"><result location="ddaq.displayController.StartHere (Notifications.scala:13)" id="2163699"><stats time="211" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139342697"><stats time="14" expectations="1" failures="1" examples="1"><trend><stats time="14" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139471395"><result location="ddaq.displayController.StartHere (Notifications.scala:14)" id="2163699"><stats time="149" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139471402"><stats time="11" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139487514"><result location="ddaq.displayController.StartHere (Notifications.scala:14)" id="2163699"><stats time="275" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139487520"><stats time="13" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139510462"><result location="ddaq.displayController.StartHere (Notifications.scala:14)" id="2163699"><stats time="130" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139510469"><stats time="10" expectations="1" failures="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139538061"><stats time="12" expectations="1" successes="1" examples="1"><trend><stats time="12" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139548307"><result location="ddaq.displayController.StartHere (Notifications.scala:14)" id="2163699"><stats time="177" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139548318"><stats time="11" expectations="1" failures="1" examples="1"><trend><stats time="11" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139555226"><stats time="14" expectations="1" successes="1" examples="1"><trend><stats time="14" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139582640"><stats time="11" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-stats timestamp="1390139610110"><stats time="12" expectations="1" successes="1" examples="1"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139665827"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="225" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139665832"><stats time="13" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="13" expectations="1" failures="1" examples="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139698046"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="131" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139698070"><stats time="14" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139725146"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="146" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139725155"><stats time="14" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139758325"><result location="ddaq.displayController.StartHere (Notifications.scala:14)" id="74232856"><stats time="179" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="178" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139758333"><stats time="11" expectations="2" failures="2" examples="2"><trend><stats time="11" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139784968"><result location="ddaq.displayController.StartHere (Notifications.scala:14)" id="74232856"><stats time="172" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="170" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139784975"><stats time="12" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390139798280"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="210" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390139798288"><stats time="12" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="12" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390140151887"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="140" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390140151894"><stats time="14" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390140180618"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="183" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390140180625"><stats time="13" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390140228496"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="198" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390140228502"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390140338740"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="188" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390140338747"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390140554784"><result location="ddaq.displayController.StartHere (Notifications.scala:14)" id="74232856"><stats time="221" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="218" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390140554791"><stats time="14" expectations="2" failures="2" examples="2"><trend><stats time="14" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390143007676"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="171" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390143007684"><stats time="14" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="14" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390143084648"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="219" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390143084659"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390143201254"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="268" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390143201261"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390143212368"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="257" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390143212377"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390226130635"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="157" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390226130655"><stats time="25" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390270451844"><result location="ddaq.displayController.StartHere (Notifications.scala:17)" id="-1680239329"><stats time="131" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390270451875"><stats time="15" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390277537624"><result location="ddaq.displayController.StartHere (Notifications.scala:30)" id="-1680239329"><stats time="142" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390277537641"><stats time="16" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390277630488"><result location="ddaq.displayController.StartHere (Notifications.scala:30)" id="-1680239329"><stats time="129" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390277630508"><stats time="13" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390317556952"><result location="ddaq.displayController.StartHere (Notifications.scala:30)" id="-1680239329"><stats time="202" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390317556974"><stats time="19" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390318213586"><result location="ddaq.displayController.StartHere (Notifications.scala:30)" id="-1680239329"><stats time="164" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390318213601"><stats time="16" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390318329196"><result location="ddaq.displayController.StartHere (Notifications.scala:30)" id="-1680239329"><stats time="156" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390318329212"><stats time="11" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390321294219"><result location="ddaq.displayController.StartHere (Notifications.scala:30)" id="-1680239329"><stats time="163" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390321294235"><stats time="13" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390321311716"><result location="ddaq.displayController.StartHere (Notifications.scala:30)" id="-1680239329"><stats time="185" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390321311727"><stats time="13" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390324297204"><result location="ddaq.displayController.StartHere (Notifications.scala:37)" id="-1680239329"><stats time="132" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390324297215"><stats time="9" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390324311630"><result location="ddaq.displayController.StartHere (Notifications.scala:34)" id="74232856"><stats time="112" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.StartHere (Notifications.scala:37)" id="-1680239329"><stats time="111" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390324311644"><stats time="10" expectations="2" failures="2" examples="2"><trend><stats time="10" failures="1" successes="-1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390324335606"><result location="ddaq.displayController.StartHere (Notifications.scala:34)" id="74232856"><stats time="108" expectations="1" failures="1" examples="1"></stats></result>
+<result location="ddaq.displayController.StartHere (Notifications.scala:37)" id="-1680239329"><stats time="108" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390324335617"><stats time="9" expectations="2" failures="2" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390324357327"><result location="ddaq.displayController.StartHere (Notifications.scala:37)" id="-1680239329"><stats time="104" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390324357336"><stats time="15" expectations="2" failures="1" successes="1" examples="2"><trend><stats time="15" failures="-1" successes="1"></stats></trend></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390324421408"><result location="ddaq.displayController.StartHere (Notifications.scala:39)" id="-1680239329"><stats time="113" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390324421418"><stats time="9" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390324489776"><result location="ddaq.displayController.StartHere (Notifications.scala:39)" id="-1680239329"><stats time="95" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390324489787"><stats time="9" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390353866161"><result location="ddaq.displayController.StartHere (Notifications.scala:44)" id="-1680239329"><stats time="99" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390353866168"><stats time="9" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390353893815"><result location="ddaq.displayController.StartHere (Notifications.scala:44)" id="-1680239329"><stats time="110" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390353893822"><stats time="10" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390353919276"><result location="ddaq.displayController.StartHere (Notifications.scala:44)" id="-1680239329"><stats time="159" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390353919283"><stats time="10" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390353962708"><result location="ddaq.displayController.StartHere (Notifications.scala:44)" id="-1680239329"><stats time="123" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390353962718"><stats time="9" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390353973007"><result location="ddaq.displayController.StartHere (Notifications.scala:44)" id="-1680239329"><stats time="104" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390353973015"><stats time="17" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390405402474"><result location="ddaq.displayController.StartHere (Notifications.scala:44)" id="-1680239329"><stats time="106" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390405402538"><stats time="15" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390405455901"><result location="ddaq.displayController.StartHere (Notifications.scala:45)" id="-1680239329"><stats time="103" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390405455916"><stats time="9" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>
+<ddaq.displayController.StartHere-results timestamp="1390480547564"><result location="ddaq.displayController.StartHere (Notifications.scala:45)" id="-1680239329"><stats time="118" expectations="1" failures="1" examples="1"></stats></result>
+</ddaq.displayController.StartHere-results>
+<ddaq.displayController.StartHere-stats timestamp="1390480547601"><stats time="12" expectations="2" failures="1" successes="1" examples="2"></stats></ddaq.displayController.StartHere-stats>

@@ -1,0 +1,20 @@
+[0m[[0minfo[0m] [0mHelloWorldSpec[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mChannels should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[33mx[0m work[0m[0m
+[0m[[31merror[0m] [0m   List() is not equal to List(0, 2, 4, 6) (Notifications.scala:55)[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[33mx[0m merge[0m[0m
+[0m[[31merror[0m] [0m   List() is not equal to List(0, 1, 2, 3, 4, 5, 6, 7, 9) (Notifications.scala:58)[0m
+[0m[[31merror[0m] [0mExpected: List(0, 1, 2, 3, 4, 5, 6, 7, 9)[0m
+[0m[[31merror[0m] [0mActual:   List()[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[33mx[0m join[0m[0m
+[0m[[31merror[0m] [0m   List() is not equal to List((0,1), (2,3), (4,5), (6,7), (6,9)) (Notifications.scala:62)[0m
+[0m[[31merror[0m] [0mExpected: List((0,1), (2,3), (4,5), (6,7), (6,9))[0m
+[0m[[31merror[0m] [0mActual:   List()[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0mTotal for specification HelloWorldSpec[0m
+[0m[[0minfo[0m] [0m[34mFinished in 15 ms[0m[0m
+[0m[[0minfo[0m] [0m[34m[0m[34m3 examples, 3 failures, 0 error[0m[0m
