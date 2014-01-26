@@ -13,7 +13,7 @@ object StartHere extends Specification {
   val two: Process[Task,Int] = Process.range(1,7,2)
   val merge = one merge two
 
-  val both = one.map((1,_)).merge(two.map { e => (2,e) }).fold[Map[Int,Int]] { tup =>
+  val both = one.map((1,_)).merge(two.map { e => (2,e) }).foldMap[Map[Int,Int]] { tup =>
     println(tup)
     val (source, newValue) = tup
     Map(source -> newValue)
