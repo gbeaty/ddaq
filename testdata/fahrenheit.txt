@@ -1,4 +1,0 @@
-// this file contains a list of temperatures in degrees fahrenheit 
-18.0
-17.0
-25.0
