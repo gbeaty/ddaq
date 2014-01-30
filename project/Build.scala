@@ -48,4 +48,6 @@ object Ddaq extends Build {
   lazy val displayController = subproject("display-controller")
 
   lazy val logger = subproject("logger")
+
+  lazy val display = subproject("display")
 }
