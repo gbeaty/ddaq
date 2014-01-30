@@ -13,7 +13,7 @@ object Ddaq extends Build {
 
   val ddaqDeps = Seq(
     "org.scalaz" %% "scalaz-core" % "7.0.5",
-    "org.scalaz.stream" %% "scalaz-stream" % "0.3",
+    "org.scalaz.stream" %% "scalaz-stream" % "0.3.1",
     "org.specs2" %% "specs2" % "2.3.7" % "test"
   ) ++ jodas
 

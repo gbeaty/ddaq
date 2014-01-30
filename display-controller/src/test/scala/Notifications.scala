@@ -1,49 +1,42 @@
 package ddaq.displayController
 
+import ddaq._
+
 import org.specs2.mutable._
 import scalaz.concurrent.Task
 import scalaz._
 import Scalaz._
 import scalaz.stream._
 
+import org.joda.time._
+
 object StartHere extends Specification {
 
+  import Sample._
+
+  def toSample(i: Int) = Sample(i, new DateTime(i))
+
   val seq = Seq(0,2,4,6)
-  val one: Process[Task,Int] = Process.range(0,10,2)
-  val two: Process[Task,Int] = Process.range(1,7,2)
+  val one = Process.range(0,10,2).map(toSample(_))
+  val two = Process.range(1,7,2).map(toSample(_))
   val merge = one merge two
-
-  val both = one.map((1,_)).merge(two.map { e => (2,e) }).foldMap[Map[Int,Int]] { tup =>
-    println(tup)
-    val (source, newValue) = tup
-    Map(source -> newValue)
-  }
-
-  /*val both = .foldMap(Option[Int],Option[Int]) { (acc, el) =>
-    (acc, el) match {
-      case ()
-    }
-  }*/
-
-  /*def both[A,B]: Wye[A, B, (A,B)] = {
-    import wye._
-    import Process._
-    import ReceiveY._
-    def go(a: A): Wye[A, Any, A] =
-      receiveBoth({
-        case ReceiveL(l)  => emit(l) fby go(l)
-        case ReceiveR(_)  => emit(a) fby go(a)
-        case HaltOne(rsn) => Halt(rsn)
-      })
-    awaitL[A].flatMap(s => emit(s) fby go(s))
-  }*/
 
   "Notifications" should {
     "Merge" in {
-      merge.runLog.run.toSeq ==== scala.collection.immutable.Seq(0,1,2,3,4,5,6,8)
+      merge.runLog.run.toSeq ==== scala.collection.immutable.Seq(0,1,2,3,4,5,6,8).map(toSample(_))
     }
     "Combine" in {
-      both.runLog.run.toSeq ==== scala.collection.immutable.Seq[Map[Int,Int]]() //scala.collection.immutable.Seq((0,1),(2,1),(2,3),(4,3),(4,5),(6,5),(8,5))
+      Channel.lasts(one, two).runLog.run.toSeq ==== scala.collection.immutable.Seq(
+        Map(                  ),
+        Map(          two -> 1),
+        Map(one -> 0, two -> 1),
+        Map(one -> 0, two -> 3),
+        Map(one -> 2, two -> 3),
+        Map(one -> 2, two -> 5),
+        Map(one -> 4, two -> 5),
+        Map(one -> 6, two -> 5),
+        Map(one -> 8, two -> 5)
+      ).map(m => new CombinedSample(m.mapValues(toSample(_))))
     }
   }
 }
