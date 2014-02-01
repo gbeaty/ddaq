@@ -7,7 +7,7 @@ object SystemOut extends Display {
 	val name = "System.out"
 	val platforms: Set[Platform] = Set(Test)
 
-	def handleChange[A](chanName: String, sample: Option[Sample[A]]) {
+	def apply[A](chanName: String, sample: Option[Sample[A]]) {
 		print(chanName + ": " + sample.map(_.value).getOrElse("----"))
 	}
 }

@@ -5,7 +5,7 @@ import Keys._
 
 object Ddaq extends Build {
 
-  val appVersion      = "0.1"
+  val appVersion = "0.1"
   val scala = "2.10.3"
 
   val jodas = Seq("joda-time" % "joda-time" % "2.2", "org.joda" % "joda-convert" % "1.2")
@@ -39,15 +39,14 @@ object Ddaq extends Build {
       version := appVersion,
       libraryDependencies := ddaqDeps
     )
-  )  
+  )
 
-  lazy val ddaq = project("ddaq")
+  lazy val aaaDdaq = project("ddaq") //.dependsOn(RootProject(uri("https://github.com/KarolS/units.git")))
 
-  def subproject(name: String) = project(name).dependsOn(ddaq)
+  def subproject(name: String) = project(name).dependsOn(aaaDdaq)
 
   lazy val displayController = subproject("display-controller")
-
   lazy val logger = subproject("logger")
-
   lazy val display = subproject("display")
+  lazy val sensors = subproject("sensors")
 }
