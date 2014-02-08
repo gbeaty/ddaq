@@ -41,12 +41,14 @@ object Ddaq extends Build {
     )
   )
 
-  lazy val aaaDdaq = project("ddaq") //.dependsOn(RootProject(uri("https://github.com/KarolS/units.git")))
+  val ddaq = project("ddaq") //.dependsOn(RootProject(uri("https://github.com/KarolS/units.git")))
 
-  def subproject(name: String) = project(name).dependsOn(aaaDdaq)
+  def subproject(name: String) = project(name).dependsOn(ddaq)
 
   lazy val displayController = subproject("display-controller")
   lazy val logger = subproject("logger")
   lazy val display = subproject("display")
   lazy val sensors = subproject("sensors")
+
+  override def rootProject = Some(ddaq)
 }
