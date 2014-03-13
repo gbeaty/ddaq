@@ -5,40 +5,59 @@ import ddaq.implicits._
 import scala.math._
 import scala.collection.SortedMap
 
+sealed trait SensorInput
+
 sealed trait SensorOutput
 trait Volts extends SensorOutput
 trait Frequency extends SensorOutput
 
 trait Sensor {
-	def unapply(out: Double): Option[Double]
+  val name: String
+  val inputUpperRange: Option[Double] = None
+  val inputLowerRange: Option[Double] = None
+  val outputUpperRange: Option[Double] = None
+  val outputLowerRange: Option[Double] = None
 }
-trait InvertedSensor {
-	def apply(in: Double): Option[Double]
+
+trait DefinedSensor extends Sensor {
+  def unapply(out: Double): Option[Double]
 }
-trait InvertibleSensor extends Sensor with InvertedSensor
+trait InvertedSensor extends Sensor {
+  def apply(in: Double): Option[Double]
+}
+trait InvertibleSensor extends InvertedSensor with DefinedSensor
 
 object Sensor {
-	def apply(f: Double => Double) = new Sensor {
+	def apply(n: String, f: Double => Option[Double]) = new DefinedSensor {
+    val name = n
 		def unapply(out: Double) = f(out)
 	}
-	def inverted(f: Double => Double) = new InvertedSensor {
+	def inverted(n: String, f: Double => Option[Double]) = new InvertedSensor {
+    val name = n
 		def apply(in: Double) = f(in)
 	}
-	def invertible(io: Double => Double, oi: Double => Double) = new InvertibleSensor {
+	def invertible(n: String, io: Double => Option[Double], oi: Double => Option[Double]) = new InvertibleSensor {
+    val name = n
 		def apply(in: Double) = io(in)
 		def unapply(out: Double) = oi(out)
 	}
 
   // out = offset + in * coef
   // in = (out - offset) / coef
-	def linear(offset: Double, coef: Double) = Sensor.invertible(i => offset + coef * i, o => (o - offset) / coef)
+	def linear(n: String, offset: Double, coef: Double) = Sensor.invertible(n, i => offset + coef * i, o => (o - offset) / coef)
 
-	def lookup(table: Map[Double,Double]) = new InvertibleSensor {
+	def lookup(n: String, table: Map[Double,Double]) = new InvertibleSensor {
+    val name = n
     private lazy val array = table.toArray.sortBy(_._1)
     private lazy val inverseArray = array.map(kv => (kv._2,kv._1)).sortBy(_._1)
 
     def apply(in: Double) = interpolateLinear(inverseArray, in)
     def unapply(in: Double) = interpolateLinear(array, in)
+
+    override val inputUpperRange = Some(table.values.max)
+    override val inputLowerRange = Some(table.values.min)
+    override val outputUpperRange = Some(table.keys.max)
+    override val outputLowerRange = Some(table.keys.min)
   }
 
 	def interpolateLinear(table: Array[(Double,Double)], in: Double): Option[Double] =
@@ -69,11 +88,13 @@ object Sensor {
 			}
 }
 
-trait SensorCorrector extends Function1[Double,Option[Double]]
+trait SensorCorrector extends Function1[Double,Option[Double]] {
+  val name: String
+}
 
 trait SensorSubstitution extends SensorCorrector {
 	def defaultSensor: InvertedSensor
-	def newSensor: Sensor
+	def newSensor: DefinedSensor
 
-	def apply(badIn: Double) = defaultSensor(badIn).flatMap(newSensor.unapply(_))
+	def apply(badIn: Double) = defaultSensor.apply(badIn).flatMap(newSensor.unapply(_))
 }

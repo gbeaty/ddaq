@@ -1,7 +1,8 @@
 package ddaq.displayController
 
 import ddaq._
-import ddaq.trigger._
+import ddaq.implicits._
+import ddaq.Channel._
 
 import scalaz._
 import Scalaz._
@@ -16,7 +17,10 @@ case class Notification(name: String, triggerLevels: Map[Trigger,Byte]) {
   val triggers = triggerLevels.keySet
   val channels = triggers.map(_.channels).flatten
 
-  // val levelStream = 
+  val levelStream = triggerLevels.map { tup =>
+    val (trigger, level) = tup
+    tup
+  }
 
   // val levelEnum = EnumeratorP.mergeAll(triggers.map(_.enum).toSeq: _*)
 
