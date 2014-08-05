@@ -45,10 +45,10 @@ object Ddaq extends Build {
 
   def subproject(name: String) = project(name).dependsOn(ddaq)
 
-  lazy val displayController = subproject("display-controller")
+  lazy val displayController = subproject("controller")
   lazy val logger = subproject("logger")
-  lazy val display = subproject("display")
-  lazy val sensors = subproject("sensors")
+  lazy val display = subproject("dash")
+  lazy val sensors = subproject("sensor")
 
   override def rootProject = Some(ddaq)
 }

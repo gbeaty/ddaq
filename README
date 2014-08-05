@@ -1,37 +1,18 @@
 Problems:
-Gathering mechanical data from external sources (OBD2 interfaces, ADCs, etc).
+Gathering mechanical data from external sources (OBD2 interfaces, ADCs, CAN buses, etc).
 Saving said data in standard formats.
 Displaying only the data the operator needs to see.
 
-
-
 Goals:
-Modular, open-source dash system targeting Android.
+Modular, open-source dash system targeting Android and potentially other JVM-capable platforms.
 Open source, on github.
 Leverage code contributions for sensor definitions, front-ends, log file formats, and data-source drivers.
-Free for non-commercial use, to leverage hobbyist contributions.
-Charge for commercial use.
-Web-based architecture.
-Easy for millions of javascript developers to change.
-Forward-compatible with new hardware and OSes.
-Implicitly client-server for remote monitoring and logging.
-Scale from modified street cars to professional race teams.
-JVM-based (Scala) back end for Android, Windows and Linux compatibility.
-Initial release goal is one (reference?) hardware package:
-OBD2 and CAN bus support.
-One sensor-family (e.g., GM) supported.
-One front-end.
-No video or analog DAQ support needed.
 
-Modules:
+Sub-projects:
 
-alldaq_web: Web-based front-end for real-time data display. The “gauge” or “dash” part of the system. Communicates to alldaq via a websocket/JSON API.
-alldaq_source: Driver for connecting bits of hardware (OBD2 scanners, CAN bus receivers, ADCs , etc.) to alldaq.
-alldaq_log: Driver for creating log files in various formats.
-alldaq_sensor: Driver for transforming raw input (e.g., voltage) into units of measure.
-alldaq: The glue connecting all of these modules together. Uses Iteratees and Enumerators to transform incoming data. Will probably use Spray or Play2Mini.
-
-Possible future modules:
-alldaq_perform: GPS and accelerometer-based performance calculations. Lap-times, 1/4 mile, etc. PBox functions.
-alldaq_video: Video capture, overlay, and streaming to the web (UStream, etc.).
-alldaq_radio: Pit-car VOIP communications.
+source: Data source drivers, such as OBD2 interfaces, ADCs, etc.
+controller: Controls how the inputs are streamed to the dash(es) and logger(s). Refresh rates, rolling averages, channel composition, etc. go here.
+dash: Handles how things are displayed. The controller tells the display what to show and when, and it does the rest.
+ui: The UIs for configuring the system. Potentially one per OS.
+logger: Handles saving gathered data to various log file formats.
+sensor: Sensor definitions.
