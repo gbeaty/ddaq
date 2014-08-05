@@ -6,15 +6,15 @@ import Keys._
 object Ddaq extends Build {
 
   val appVersion = "0.1"
-  val scala = "2.10.3"
+  val scala = "2.11.2"
 
-  val jodas = Seq("joda-time" % "joda-time" % "2.2", "org.joda" % "joda-convert" % "1.2")
-  val shapeless = "com.chuusai" % "shapeless" % "2.0.0-M1" cross CrossVersion.full
+  val jodas = Seq("joda-time" % "joda-time" % "2.4", "org.joda" % "joda-convert" % "1.7")
+  val shapeless = "com.chuusai" % "shapeless" % "2.0.0" cross CrossVersion.full
 
   val ddaqDeps = Seq(
-    "org.scalaz" %% "scalaz-core" % "7.0.5",
-    "org.scalaz.stream" %% "scalaz-stream" % "0.3.1",
-    "org.specs2" %% "specs2" % "2.3.7" % "test"
+    "org.scalaz" %% "scalaz-core" % "7.0.6",
+    "org.scalaz.stream" %% "scalaz-stream" % "0.4.1",
+    "org.specs2" %% "specs2" % "2.4" % "test"
   ) ++ jodas
 
   val commonResolvers = Seq(
