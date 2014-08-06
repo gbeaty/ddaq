@@ -1,4 +1,4 @@
-package ddaq.displayController
+package ddaq.controller
 
 import ddaq._
 

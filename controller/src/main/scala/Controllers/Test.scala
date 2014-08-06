@@ -1,7 +1,6 @@
-package ddaq.displayController.controllers
+package ddaq.controller
 
 import ddaq._
-import ddaq.displayController._
 
 import scalaz._
 import Scalaz._

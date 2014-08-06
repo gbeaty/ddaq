@@ -14,7 +14,8 @@ object Ddaq extends Build {
   val ddaqDeps = Seq(
     "org.scalaz" %% "scalaz-core" % "7.0.6",
     "org.scalaz.stream" %% "scalaz-stream" % "0.4.1",
-    "org.specs2" %% "specs2" % "2.4" % "test"
+    "org.specs2" %% "specs2" % "2.4" % "test",
+    "com.squants"  %% "squants"  % "0.4.2"
   ) ++ jodas
 
   val commonResolvers = Seq(
@@ -41,14 +42,19 @@ object Ddaq extends Build {
     )
   )
 
-  val ddaq = project("ddaq") //.dependsOn(RootProject(uri("https://github.com/KarolS/units.git")))
+  val ddaq = project("ddaq") //.dependsOn(RootProject(uri("https://github.com/KarolS/units.git")))  
 
   def subproject(name: String) = project(name).dependsOn(ddaq)
 
-  lazy val displayController = subproject("controller")
+  lazy val controller = subproject("controller")
   lazy val logger = subproject("logger")
-  lazy val display = subproject("dash")
-  lazy val sensors = subproject("sensor")
+  lazy val sensor = subproject("sensor")
+  lazy val source = subproject("source")
 
-  override def rootProject = Some(ddaq)
+  def platform(name: String) = project(name).dependsOn(ddaq, controller, logger, sensor, source)
+
+  lazy val test = platform("test")
+  lazy val android = platform("android")  
+
+  override def rootProject = Some(test)
 }

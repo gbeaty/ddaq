@@ -1,6 +1,7 @@
 package ddaq.sensors
 
-import ddaq.implicits._
+import ddaq._
+import Ddaq._
 
 import scala.math._
 import scala.collection.SortedMap

@@ -1,7 +1,7 @@
-package ddaq.displayController
+package ddaq.controller
 
 import ddaq._
-import ddaq.implicits._
+import Ddaq._
 import ddaq.Channel._
 
 import scalaz._

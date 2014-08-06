@@ -8,11 +8,15 @@ Modular, open-source dash system targeting Android and potentially other JVM-cap
 Open source, on github.
 Leverage code contributions for sensor definitions, front-ends, log file formats, and data-source drivers.
 
-Sub-projects:
+Projects:
 
+ddaq: The main library. Defines channels, dashes, controllers, sources, etc. and tools to compose them.
 source: Data source drivers, such as OBD2 interfaces, ADCs, etc.
-controller: Controls how the inputs are streamed to the dash(es) and logger(s). Refresh rates, rolling averages, channel composition, etc. go here.
-dash: Handles how things are displayed. The controller tells the display what to show and when, and it does the rest.
-ui: The UIs for configuring the system. Potentially one per OS.
+controller: Controls dashes and loggers. Channel composition, warnings, rolling averages, etc.
 logger: Handles saving gathered data to various log file formats.
 sensor: Sensor definitions.
+
+Platforms:
+
+test: The development test platform. Prints output to System.out.
+android: The first target platform.

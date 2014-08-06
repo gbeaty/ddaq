@@ -7,9 +7,11 @@ import Scalaz._
 import scalaz.concurrent.Task
 import scalaz.stream._
 
+import scala.concurrent.duration._
+
 import org.joda.time._
 
-trait SourceProtocol
-object TestProtocol extends SourceProtocol
-
-case class Source(name: String, sensors: Map[Sensor,Channel.Channel[_]])
+trait Source {
+  val name: String
+  val inputs: Map[String,Ddaq.Channel[_]]
+}
