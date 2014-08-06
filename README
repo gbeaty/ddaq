@@ -15,6 +15,7 @@ source: Data source drivers, such as OBD2 interfaces, ADCs, etc.
 controller: Controls dashes and loggers. Channel composition, warnings, rolling averages, etc.
 logger: Handles saving gathered data to various log file formats.
 sensor: Sensor definitions.
+channel: Channel type definitions and composition (e.g. low oil pressure warnings, combining RPM and pulse with to get duty cycle, etc.)
 
 Platforms:
 

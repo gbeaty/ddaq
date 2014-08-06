@@ -17,4 +17,6 @@ object Ddaq {
   // implicit def toChannel[A](s: Channel.Stream[A]) = Channel(s)
 
   implicit def combinedSample[A](value: Sample.Combined[A]) = Sample(value, value.map(_._2.timestamp).maxBy(_.getMillis))
+
+  implicit def toChannel[A](nc: NamedChannel[A]) = nc.channel
 }

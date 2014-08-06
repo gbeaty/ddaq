@@ -23,5 +23,7 @@ object TestSource extends Source {
   Sample(rand.nextDouble * 5.0, new DateTime)
  }
 
+ // val rpm = 
+
  val inputs = Map("adc1" -> randomVolts, "adc2" -> randomVolts)
 }

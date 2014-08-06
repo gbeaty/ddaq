@@ -35,3 +35,15 @@ object Channel {
     Map(stream -> sample)
   }
 }
+
+class Named(_names: String*) {
+  val names = _names.sortBy(-_.length).toArray
+  def getLongestName(l: Int) = {
+    val len = if(l < 1) 1 else l
+    names.find(_.length <= len).getOrElse(names.last.take(len))
+  }
+}
+
+class NamedChannel[A](_names: String*)(val channel: Ddaq.Channel[A]) extends Named(_names: _*)
+
+class ChannelType(_names: String*) extends Named(_names: _*)
