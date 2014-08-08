@@ -47,3 +47,5 @@ class Named(_names: String*) {
 class NamedChannel[A](_names: String*)(val channel: Ddaq.Channel[A]) extends Named(_names: _*)
 
 class ChannelType(_names: String*) extends Named(_names: _*)
+
+case class ChannelComposer(ins: Set[NamedChannel[_]], outs: Set[NamedChannel[_]])

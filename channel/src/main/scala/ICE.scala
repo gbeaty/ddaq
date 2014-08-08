@@ -2,9 +2,12 @@ package ddaq.channel
 
 import ddaq._
 
+object other extends ChannelType("other")
+
 package object ice {
   private def ct(ns: String*) = new ChannelType(ns: _*)
   val rpm = ct("rpm")
+  val shiftLight = ct("shift light", "shift", "shft")
   val oilPressure = ct("oil pressure", "oil pres", "oil P", "OP")
   val oilTemperature = ct("oil temperature", "oil temp", "oil T", "OT")
   val coolantTemperature = ct("water temperature", "water temp", "water T", "WT")

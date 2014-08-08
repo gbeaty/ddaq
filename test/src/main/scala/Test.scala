@@ -10,13 +10,16 @@ import org.joda.time._
 object SystemOut extends Display {
   val name = "System.out"
 
+  val idealChannelCount = 4
+  val maxChannelCount = 8
+
   def apply[A](chanName: String, sample: Option[Sample[A]]) {
     print(chanName + ": " + sample.map(_.value).getOrElse("----"))
   }
 }
 
 object TestSource extends Source {
- val name = "test source"
+ val name = "test source"  
 
  def randomVolts = Process.awakeEvery(1 seconds).map { _ =>
   val rand = new scala.util.Random
