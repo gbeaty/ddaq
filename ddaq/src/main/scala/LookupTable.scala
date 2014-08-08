@@ -6,20 +6,22 @@ import Ddaq._
 import scala.math._
 import scala.collection.SortedMap
 
-class LookupTable(map: Map[Double,Double]) {
-  protected val table = map.toArray.sortBy(_._1)
-  protected lazy val inverseTable = table.map(kv => (kv._2,kv._1)).sortBy(_._1)
-  def apply(in: Double) = LookupTable.interpolateLinear(table, in)
-  def unapply(out: Double) = LookupTable.interpolateLinear(inverseTable, out)
-  val inputUpperRange = map.values.max
-  val inputLowerRange = map.values.min
-  val outputUpperRange = map.keys.max
-  val outputLowerRange = map.keys.min
+import squants._
+
+class LookupTable[K,V](map: Map[Quantity[K],Quantity[V]]) {
+  protected val table = map.toArray.sortBy(_._1.value)
+  protected val inverseTable = table.map(kv => (kv._2,kv._1)).sortBy(_._1.value)
+  def apply(in: Quantity[K]) = LookupTable.interpolateLinear(table, in)
+  def unapply(out: Quantity[V]) = LookupTable.interpolateLinear(inverseTable, out)
+  val inputUpperRange = map.values.maxBy(_.value)
+  val inputLowerRange = map.values.minBy(_.value)
+  val outputUpperRange = map.keys.maxBy(_.value)
+  val outputLowerRange = map.keys.minBy(_.value)
 }
 
 object LookupTable {
 
-  def interpolateLinear(table: Array[(Double,Double)], in: Double): Option[Double] =
+  def interpolateLinear[K,V](table: Array[(Quantity[K],Quantity[V])], in: Quantity[K]): Option[Quantity[V]] =
     if(table.length < 2 || in < table(0)._1 || in > table(table.length - 1)._1)
       None
       else {

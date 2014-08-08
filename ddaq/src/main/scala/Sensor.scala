@@ -6,6 +6,8 @@ import Ddaq._
 import scala.math._
 import scala.collection.SortedMap
 
+import squants._
+
 sealed trait SensorInput
 
 sealed trait SensorOutput
@@ -14,61 +16,63 @@ trait Frequency extends SensorOutput
 
 trait Sensor {
   val name: String
-  val inputUpperRange: Option[Double] = None
-  val inputLowerRange: Option[Double] = None
-  val outputUpperRange: Option[Double] = None
-  val outputLowerRange: Option[Double] = None
+  val inputUpperRange: Option[Quantity[_]] = None
+  val inputLowerRange: Option[Quantity[_]] = None
+  val outputUpperRange: Option[Quantity[_]] = None
+  val outputLowerRange: Option[Quantity[_]] = None
 }
 
-trait DefinedSensor extends Sensor {
-  def unapply(out: Double): Option[Double]
+trait IOSensor[I,O] extends Sensor {
+  def unapply(out: Quantity[O]): Option[Quantity[I]]
 }
-trait InvertedSensor extends Sensor {
-  def apply(in: Double): Option[Double]
+trait OISensor[I,O] extends Sensor {
+  def apply(in: Quantity[I]): Option[Quantity[O]]
 }
-trait InvertibleSensor extends InvertedSensor with DefinedSensor
+trait InvertibleSensor[I,O] extends OISensor[I,O] with IOSensor[I,O]
 
 object Sensor {
-	def apply(n: String, f: Double => Option[Double]) = new DefinedSensor {
+	def apply[I,O](n: String, f: Quantity[O] => Option[Quantity[I]]) = new IOSensor[I,O] {
     val name = n
-		def unapply(out: Double) = f(out)
+		def unapply(out: Quantity[O]) = f(out)
 	}
-	def inverted(n: String, f: Double => Option[Double]) = new InvertedSensor {
+	def inverted[I,O](n: String, f: Quantity[I] => Option[Quantity[O]]) = new OISensor[I,O] {
     val name = n
-		def apply(in: Double) = f(in)
+		def apply(in: Quantity[I]) = f(in)
 	}
-	def invertible(n: String, io: Double => Option[Double], oi: Double => Option[Double]) = new InvertibleSensor {
+	def invertible[I,O](n: String, io: Quantity[I] => Option[Quantity[O]], oi: Quantity[O] => Option[Quantity[I]]) = new InvertibleSensor[I,O] {
     val name = n
-		def apply(in: Double) = io(in)
-		def unapply(out: Double) = oi(out)
+		def apply(in: Quantity[I]) = io(in)
+		def unapply(out: Quantity[O]) = oi(out)
 	}
 
   // out = offset + in * coef
   // in = (out - offset) / coef
-	def linear(n: String, offset: Double, coef: Double) = Sensor.invertible(n, i => offset + coef * i, o => (o - offset) / coef)
+	def linear[O <: Quantity[O]](n: String, offset: Quantity[O], coef: Double) =
+    Sensor.invertible(n, i => offset + coef * i, o => (o - offset) / coef)
 
-	def lookup(n: String, table: Map[Double,Double]) = new InvertibleSensor {
+	def lookup[I,O](n: String, table: Map[Quantity[I],Quantity[O]]) = new InvertibleSensor[I,O] {
     val name = n
-    private lazy val array = table.toArray.sortBy(_._1)
-    private lazy val inverseArray = array.map(kv => (kv._2,kv._1)).sortBy(_._1)
+    private lazy val array = table.map(kv => (kv._1, kv._2)).toArray.sortBy(_._1)
+    private lazy val inverseArray = array.map(kv => (kv._2, kv._1)).sortBy(_._1)
 
-    def apply(in: Double) = LookupTable.interpolateLinear(inverseArray, in)
-    def unapply(in: Double) = LookupTable.interpolateLinear(array, in)
+    def apply(in: Quantity[I]) = LookupTable.interpolateLinear(inverseArray, in.value)
+    def unapply(in: Quantity[O]) = LookupTable.interpolateLinear(array, in.value)
 
-    override val inputUpperRange = Some(table.values.max)
-    override val inputLowerRange = Some(table.values.min)
-    override val outputUpperRange = Some(table.keys.max)
-    override val outputLowerRange = Some(table.keys.min)
+    override val inputUpperRange = Some(table.values.maxBy(_.value))
+    override val inputLowerRange = Some(table.values.minBy(_.value))
+    override val outputUpperRange = Some(table.keys.maxBy(_.value))
+    override val outputLowerRange = Some(table.keys.minBy(_.value))
   }
 }
 
-trait SensorCorrector extends Function1[Double,Option[Double]] {
+trait SensorCorrector[A <: Quantity[A]] extends Function1[A,Option[A]] {
   val name: String
 }
 
-trait SensorSubstitution extends SensorCorrector {
-	def defaultSensor: InvertedSensor
-	def newSensor: DefinedSensor
+/*trait SensorSubstitution[I <: Quantity[I],O <: Quantity[O]] extends SensorCorrector[O] {
+	def defaultSensor: OISensor[I,O]
+	def newSensor: IOSensor[I,O]
 
-	def apply(badIn: Double) = defaultSensor.apply(badIn).flatMap(newSensor.unapply(_))
-}
+	// def apply(badIn: O) = defaultSensor.unapply(badIn).flatMap(newSensor.apply(_))
+  def apply(badOut: O) = newSensor.apply(badIn).flatMap(defaultSensor.unapply(_))
+}*/
