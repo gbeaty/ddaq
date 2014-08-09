@@ -15,8 +15,8 @@ object Ddaq extends Build {
     "org.scalaz" %% "scalaz-core" % "7.0.6",
     "org.scalaz.stream" %% "scalaz-stream" % "0.4.1",
     "org.specs2" %% "specs2" % "2.4" % "test",
-    "com.squants"  %% "squants"  % "0.4.2",
-    "com.chuusai" % "shapeless_2.10.4" % "2.0.0"
+    "com.chuusai" % "shapeless_2.10.4" % "2.0.0",
+    "io.github.karols" %% "units" % "0.2.1"
   ) ++ jodas
 
   val commonResolvers = Seq(
