@@ -7,6 +7,7 @@ import scala.math._
 import scala.collection.SortedMap
 
 import scunits._
+import Scunits._
 
 sealed trait SensorInput
 
@@ -47,9 +48,8 @@ object Sensor {
       val unapply = oi
    }
 
-  def linear[I <: Dims,O <: Dims](n: String, offset: Measure[O], coef: Double) =
-    // invertible[I,O](n, i => offset + (coef.value * i.value).of[O], o => ((o - offset).value / coef.value).of[I])
-    invertible[I,O](n, i => offset + Measure[O](coef * i.v), o => Measure[I]((o - offset).v / coef))
+  def linear[I <: Dims,O <: Dims](n: String, offset: Measure[O], coef: Measure[O#Div[I]]) =
+    invertible[I,O](n, i => Some(offset + i * coef), o => Some((o - offset) / coef))
 
   def lookup[I <: Dims,O <: Dims](n: String, map: Map[Measure[I],Measure[O]]) = new InvertibleSensor[I,O] {
     val name = n

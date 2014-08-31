@@ -6,6 +6,9 @@ import Ddaq._
 import scala.math._
 import scala.collection.SortedMap
 
+import scalaz._
+import Scalaz._
+
 import scunits._
 import Scunits._
 
@@ -34,11 +37,11 @@ object LookupTable {
     if(in < keys(0) || in > keys(upperIndex))
       None
       else {
-        while((upperIndex - lowerIndex) > 1) {          
+        while((upperIndex - lowerIndex) > 1) {
           var i = lowerIndex + (upperIndex - lowerIndex) / 2
           var k = keys(i)
 
-          if(k == in)
+          if(k === in)
             return Some(values(i))
 
           if(in > k)
@@ -50,9 +53,9 @@ object LookupTable {
         val k2 = keys(upperIndex)
         val v1 = values(lowerIndex)
         val v2 = values(upperIndex)
-        val percent = ((in - k1) / (k2 - k1)).v
+        val percent = ((in - k1) / (k2 - k1))
         val diff = v2 - v1
-        Some(v1 + diff.mult(percent))
+        Some(v1 + diff.mult(percent.v))
       }
   }
 }
