@@ -2,18 +2,23 @@ package ddaq.sensors
 
 import ddaq.Ddaq._
 
-import io.github.karols.units._
-import SI._
+import scunits._
+import scunits.quantity._
+import scunits.unit.si._
+import scunits.unit.us._
+import scunits.unit.metric._
+import scunits.unit.pressure._
 
 import org.specs2.mutable._
 
 class SensorsTests extends Specification {
 
 	"Lookup tables" should {
-    val table = Map(0.0-> -0.5, 1.0->0.5, 2.0->1.0, 3.0->1.5, 4.0->2.0, 5.0->4.0).map(kv => (kv._1.of[bar], kv._2.of[volt]))
+    val table = Map(0.0-> -0.5, 1.0->0.5, 2.0->1.0, 3.0->1.5, 4.0->2.0, 5.0->4.0).map(kv => (bar(kv._1), volt(kv._2)))
     val ls = Sensor.lookup("", table)
+    val err = 0.0000001
 
-    implicit def toUnit[U <: MUnit](d: Double) = d.of[U]
+    implicit def toUnit[D <: Dims](d: Double) = Measure[D](d)
 
     "Fail on out-of-bounds searches" in {
       ls.unapply(-1.0) === None
@@ -26,10 +31,10 @@ class SensorsTests extends Specification {
       table.map { kv => ls.unapply(kv._2) } ==== table.map { kv => Some(kv._1) }
     }
     "Interpolate" in {      
-      ls.apply(0.5).get.value must beCloseTo(0.0, 0.0000001)
-      ls.apply(3.5).get.value must beCloseTo(1.75, 0.0000001)
-      ls.apply(2.1).get.value must beCloseTo(1.05, 0.0000001)
-      ls.apply(4.8).get.value must beCloseTo(3.6, 0.0000001)
+      ls.apply(bar(0.5)).get.v must beCloseTo(0.0, err)
+      ls.apply(3.5).get.v must beCloseTo(1.75, err)
+      ls.apply(2.1).get.v must beCloseTo(1.05, err)
+      ls.apply(4.8).get.v must beCloseTo(3.6, err)
     }
     "Interpolate inverse" in {
       ls.unapply(0.0).get ==== 0.5
@@ -46,11 +51,11 @@ class SensorsTests extends Specification {
   }
 
   "Linear sensors" should {
-    val sensor = Sensor.linear("", 1.0.of[volt], 0.5.of[volt / bar])
+    val sensor = Sensor.linear[Pressure,Electric.Potential]("", volt(1.0), 0.5)
 
     "Transfer" in {
-      sensor.unapply(3.0.of[volt]) ==== 4.0.of[bar]
-      sensor.apply(4.0.of[bar]) ==== 3.0.of[volt]
+      sensor.unapply(volt(3.0)) ==== bar(4.0)
+      sensor.apply(bar(4.0)) ==== volt(3.0)
     }
   }
 }

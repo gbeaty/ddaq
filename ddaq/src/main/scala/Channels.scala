@@ -2,6 +2,8 @@ package ddaq
 
 import Ddaq._
 
+import scunits._
+
 import scalaz._
 import Scalaz._
 import scalaz.concurrent.Task
@@ -46,6 +48,6 @@ class Named(_names: String*) {
 
 class NamedChannel[A](_names: String*)(val channel: Ddaq.Channel[A]) extends Named(_names: _*)
 
-class ChannelType(_names: String*) extends Named(_names: _*)
+class ChannelType[A <: Dims](_names: String*) extends Named(_names: _*)
 
 case class ChannelComposer(ins: Set[NamedChannel[_]], outs: Set[NamedChannel[_]])

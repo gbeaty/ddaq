@@ -6,7 +6,7 @@ import Ddaq._
 import scala.math._
 import scala.collection.SortedMap
 
-import io.github.karols.units._
+import scunits._
 
 sealed trait SensorInput
 
@@ -14,43 +14,44 @@ sealed trait SensorOutput
 trait Volts extends SensorOutput
 trait Frequency extends SensorOutput
 
-trait SensorSpec[I <: MUnit,O <: MUnit] {
+trait SensorSpec[I <: Dims,O <: Dims] {
   val name: String
-  val inputUpperRange: Option[DoubleU[I]] = None
-  val inputLowerRange: Option[DoubleU[I]] = None
-  val outputUpperRange: Option[DoubleU[O]] = None
-  val outputLowerRange: Option[DoubleU[O]] = None
+  val inputUpperRange: Option[Measure[I]] = None
+  val inputLowerRange: Option[Measure[I]] = None
+  val outputUpperRange: Option[Measure[O]] = None
+  val outputLowerRange: Option[Measure[O]] = None
 }
 
-trait Sensor[I <: MUnit,O <: MUnit] extends SensorSpec[I,O] {
-  val apply: DoubleU[I] => Option[DoubleU[O]]
+trait Sensor[I <: Dims,O <: Dims] extends SensorSpec[I,O] {
+  val apply: Measure[I] => Option[Measure[O]]
 }
-trait InvertedSensor[I <: MUnit,O <: MUnit] extends SensorSpec[I,O] {
-  val unapply: DoubleU[O] => Option[DoubleU[I]]
+trait InvertedSensor[I <: Dims,O <: Dims] extends SensorSpec[I,O] {
+  val unapply: Measure[O] => Option[Measure[I]]
 }
-trait InvertibleSensor[I <: MUnit,O <: MUnit] extends InvertedSensor[I,O] with Sensor[I,O]
+trait InvertibleSensor[I <: Dims,O <: Dims] extends InvertedSensor[I,O] with Sensor[I,O]
 
 object Sensor {
-	def apply[I <: MUnit,O <: MUnit](n: String, f: DoubleU[I] => Option[DoubleU[O]]) = new Sensor[I,O] {
+	def apply[I <: Dims,O <: Dims](n: String, f: Measure[I] => Option[Measure[O]]) = new Sensor[I,O] {
     val name = n
     val apply = f
 	}
-	def inverted[I <: MUnit,O <: MUnit](n: String, f: DoubleU[O] => Option[DoubleU[I]]) = new InvertedSensor[I,O] {
+	def inverted[I <: Dims,O <: Dims](n: String, f: Measure[O] => Option[Measure[I]]) = new InvertedSensor[I,O] {
     val name = n
 		val unapply = f
 	}
 
-  def invertible[I <: MUnit,O <: MUnit](n: String, io: DoubleU[I] => Option[DoubleU[O]], oi: DoubleU[O] => Option[DoubleU[I]]) =
+  def invertible[I <: Dims,O <: Dims](n: String, io: Measure[I] => Option[Measure[O]], oi: Measure[O] => Option[Measure[I]]) =
     new InvertibleSensor[I,O] {
       val name = n
       val apply = io
       val unapply = oi
    }
 
-  def linear[I <: MUnit,O <: MUnit](n: String, offset: DoubleU[O], coef: DoubleU[O / I]) =
-    invertible[I,O](n, i => offset + (coef.value * i.value).of[O], o => ((o - offset).value / coef.value).of[I])
+  def linear[I <: Dims,O <: Dims](n: String, offset: Measure[O], coef: Double) =
+    // invertible[I,O](n, i => offset + (coef.value * i.value).of[O], o => ((o - offset).value / coef.value).of[I])
+    invertible[I,O](n, i => offset + Measure[O](coef * i.v), o => Measure[I]((o - offset).v / coef))
 
-  def lookup[I <: MUnit,O <: MUnit](n: String, map: Map[DoubleU[I],DoubleU[O]]) = new InvertibleSensor[I,O] {
+  def lookup[I <: Dims,O <: Dims](n: String, map: Map[Measure[I],Measure[O]]) = new InvertibleSensor[I,O] {
     val name = n
     val table = new LookupTable(map)
 
@@ -64,9 +65,9 @@ object Sensor {
   }
 }
 
-trait SensorSubstitution[I <: MUnit,O <: MUnit] {
+trait SensorSubstitution[I <: Dims,O <: Dims] {
 	def oldSensor: Sensor[I,O]
 	def newSensor: InvertedSensor[I,O]
 
-	val apply = (badIn: DoubleU[I]) => oldSensor.apply(badIn).flatMap(newSensor.unapply(_))
+	val apply = (badIn: Measure[I]) => oldSensor.apply(badIn).flatMap(newSensor.unapply(_))
 }

@@ -6,15 +6,14 @@ import Ddaq._
 import scala.math._
 import scala.collection.SortedMap
 
-import io.github.karols.units._
-import io.github.karols.units.arrays._
-import DoubleU._
+import scunits._
+import Scunits._
 
-class LookupTable[K <: MUnit,V <: MUnit](map: Map[DoubleU[K],DoubleU[V]]) {
+class LookupTable[K <: Dims,V <: Dims](map: Map[Measure[K],Measure[V]]) {
 
-  def arrayify[K <: MUnit,V <: MUnit](map: Map[DoubleU[K], DoubleU[V]]) = {
+  def arrayify[K <: Dims,V <: Dims](map: Map[Measure[K], Measure[V]]): (ArrayM[K],ArrayM[V]) = {
     val kvs = map.toSeq.sortBy(_._1)
-    (DoubleUArray(kvs.map(_._1): _*), DoubleUArray(kvs.map(_._2): _*))
+    (ArrayM(kvs.map(_._1.v).toArray), ArrayM(kvs.map(_._2.v).toArray))
   }
   
   protected val (keys, values) = arrayify(map)
@@ -22,14 +21,14 @@ class LookupTable[K <: MUnit,V <: MUnit](map: Map[DoubleU[K],DoubleU[V]]) {
 
   val apply = LookupTable.interpolateLinear(keys, values) _
   val unapply = LookupTable.interpolateLinear(inverseKeys, inverseValues) _
-  val inputUpperRange = map.keys.maxBy(_.value)
-  val inputLowerRange = map.keys.minBy(_.value)
-  val outputUpperRange = map.values.maxBy(_.value)
-  val outputLowerRange = map.values.minBy(_.value)
+  val inputUpperRange = map.keys.maxBy(_.v)
+  val inputLowerRange = map.keys.minBy(_.v)
+  val outputUpperRange = map.values.maxBy(_.v)
+  val outputLowerRange = map.values.minBy(_.v)
 }
 object LookupTable {
 
-  def interpolateLinear[K <: MUnit,V <: MUnit](keys: DoubleUArray[K], values: DoubleUArray[V])(in: DoubleU[K]): Option[DoubleU[V]] = {
+  def interpolateLinear[K <: Dims,V <: Dims](keys: ArrayM[K], values: ArrayM[V])(in: Measure[K]): Option[Measure[V]] = {
     var lowerIndex = 0
     var upperIndex = keys.length - 1
     if(in < keys(0) || in > keys(upperIndex))
@@ -39,7 +38,7 @@ object LookupTable {
           var i = lowerIndex + (upperIndex - lowerIndex) / 2
           var k = keys(i)
 
-          if(k == in.value)
+          if(k == in)
             return Some(values(i))
 
           if(in > k)
@@ -51,9 +50,9 @@ object LookupTable {
         val k2 = keys(upperIndex)
         val v1 = values(lowerIndex)
         val v2 = values(upperIndex)
-        val percent = ((in - k1) / (k2 - k1)).value
+        val percent = ((in - k1) / (k2 - k1)).v
         val diff = v2 - v1
-        Some(v1 + diff.times(percent))
+        Some(v1 + diff.mult(percent))
       }
   }
 }
