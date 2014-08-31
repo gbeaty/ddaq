@@ -1,5 +1,7 @@
 package ddaq
 
+import scala.reflect.runtime.universe.TypeTag
+
 import Ddaq._
 
 import scunits._
@@ -15,7 +17,7 @@ object Channel {
   import Sample._
 
   implicit def mapoid[A] = new Monoid[Combined[A]] {
-    def zero = Map[Ddaq.Channel[A],Sample[A]]()
+    def zero = Map[Input[A],Sample[A]]()
     def append(f1: Combined[A], f2: => Combined[A]) =
       f2.foldLeft(f1) { (res,kv) =>
         val (k,v) = kv
@@ -26,28 +28,29 @@ object Channel {
       }
   }
 
-  def combine[A](sources: Ddaq.Channel[A]*) = sources.map { s =>
+  def combine[A](sources: Input[A]*) = sources.map { s =>
       s.map((s,_))
-    }.foldLeft(Process.emitSeq[Task,(Ddaq.Channel[A],Sample[A])](Nil)) { (acc, process) =>
+    }.foldLeft(Process.emitSeq[Task,(Input[A],Sample[A])](Nil)) { (acc, process) =>
       acc.merge(process)
     }
 
-  def lasts[A](sources: Ddaq.Channel[A]*) = combine(sources: _*).scanMap[Combined[A]] { sampTup =>
+  def lasts[A](sources: Input[A]*) = combine(sources: _*).scanMap[Combined[A]] { sampTup =>
     val (stream, sample) = sampTup
     Map(stream -> sample)
   }
 }
 
 class Named(_names: String*) {
-  val names = _names.sortBy(-_.length).toArray
+  val names = _names.sortBy(-_.length).toSet.toArray
   def getLongestName(l: Int) = {
     val len = if(l < 1) 1 else l
     names.find(_.length <= len).getOrElse(names.last.take(len))
   }
 }
 
-class NamedChannel[A](_names: String*)(val channel: Ddaq.Channel[A]) extends Named(_names: _*)
+class ChannelType[A](names: String*)(implicit val typeTag: TypeTag[A]) extends Named(names: _*)
+object ChannelType {
+  val other = new ChannelType("other","?","")
+}
 
-class ChannelType[A <: Dims](_names: String*) extends Named(_names: _*)
-
-case class ChannelComposer(ins: Set[NamedChannel[_]], outs: Set[NamedChannel[_]])
+case class Channel[A](in: Input[A], typ: ChannelType[A])

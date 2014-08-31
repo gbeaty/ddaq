@@ -1,5 +1,7 @@
 package ddaq
 
+import Ddaq._
+
 import scalaz._
 import Scalaz._
 import scalaz.concurrent.Task
@@ -9,7 +11,7 @@ import org.joda.time._
 
 object Sample {
   
-  type Combined[A] = Map[Ddaq.Channel[A],Sample[A]]
+  type Combined[A] = Map[Input[A],Sample[A]]
 
   implicit def orderer[A] = Order.order[Sample[A]] { (s1,s2) =>
     if(s1.timestamp.getMillis > s2.timestamp.getMillis)

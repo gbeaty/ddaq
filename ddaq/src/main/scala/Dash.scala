@@ -2,7 +2,7 @@ package ddaq
 
 import ddaq._
 
-trait Display {
+trait Dash {
 	val name: String
   val idealChannelCount: Int
   val maxChannelCount: Int

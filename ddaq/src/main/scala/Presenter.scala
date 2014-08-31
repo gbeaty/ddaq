@@ -1,11 +1,9 @@
-package ddaq.controller
-
-import ddaq._
+package ddaq
 
 import scalaz._
 import Scalaz._
 
-trait DisplayController {
+trait Presenter {
 	val name: String
 	val refreshRate: Float
 }

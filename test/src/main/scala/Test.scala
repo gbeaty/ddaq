@@ -7,7 +7,7 @@ import scala.concurrent.duration._
 import scalaz.stream._
 import org.joda.time._
 
-object SystemOut extends Display {
+object SystemOut extends Dash {
   val name = "System.out"
 
   val idealChannelCount = 4

@@ -7,8 +7,6 @@ import scunits.quantity._
 import scunits.quantity.Automotive._
 
 package object vehicle {
-  private def ct(ns: String*) = new ChannelType(ns: _*)
-
   val speed = new ChannelType[Speed]("speed", "spd", "SP")
   val acceleration = new ChannelType[Acceleration]("acceleration", "accel", "acc")
   val longitudinalAccel = new ChannelType[Acceleration]("longitudinal acceleration", "longitudinal accel", "long accel", "long")

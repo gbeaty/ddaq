@@ -1,8 +1,6 @@
-package ddaq.controller
+package ddaq
 
-import ddaq._
 import Ddaq._
-import ddaq.Channel._
 
 import scalaz._
 import Scalaz._
@@ -30,7 +28,7 @@ case class Notification(name: String, triggerLevels: Map[Trigger,Byte]) {
 }
 
 object Notification {
-	def greaterThan[A](channel: Channel[A], first: A, second: Option[A] = None, third: Option[A] = None) = {
+	def greaterThan[A](channel: Input[A], first: A, second: Option[A] = None, third: Option[A] = None) = {
 
 	}
 }

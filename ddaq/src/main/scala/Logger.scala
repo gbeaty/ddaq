@@ -12,6 +12,10 @@ trait Format {
   lazy val fileEnd = fileExtension.map("." + _)
 }
 
+trait LoggerController {
+  def log[A](from: Channel[A], sample: Sample[A]): Option[Sample[A]]
+}
+
 trait Logger {
   val filename: String
   val format: Format

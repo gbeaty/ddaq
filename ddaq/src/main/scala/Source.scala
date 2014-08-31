@@ -1,6 +1,7 @@
 package ddaq
 
 import ddaq.sensors._
+import Ddaq._
 
 import scalaz._
 import Scalaz._
@@ -13,5 +14,5 @@ import org.joda.time._
 
 trait Source {
   val name: String
-  val inputs: Map[String,Ddaq.Channel[_]]
+  val inputs: Map[String,Input[_]]
 }

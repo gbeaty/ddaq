@@ -7,10 +7,7 @@ import scunits._
 import scunits.quantity._
 import scunits.quantity.Automotive._
 
-object other extends ChannelType("other")
-
 package object ICE {
-
   val rpm = new ChannelType[AngularVelocity]("rpm")
   val oilPressure = new ChannelType[Pressure]("oil pressure", "oil pres", "oil P", "OP")
   val oilTemperature = new ChannelType[Temperature]("oil temperature", "oil temp", "oil T", "OT")

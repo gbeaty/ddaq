@@ -9,7 +9,7 @@ import scalaz.stream._
 
 import org.joda.time._
 
-case class Trigger(stream: Ddaq.Channel[Boolean], channels: Set[Ddaq.Channel[_]]) {
+case class Trigger(stream: Input[Boolean], channels: Set[Input[_]]) {
   def op(op: (Boolean, Boolean) => Boolean)(t2: Trigger*) = Trigger(
     channels = channels ++ t2.map(_.channels).flatten,
     stream = Channel.lasts(t2.map(_.stream): _*).map { m =>
