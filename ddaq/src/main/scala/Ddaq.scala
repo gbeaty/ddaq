@@ -7,8 +7,6 @@ import Scalaz._
 import scalaz.concurrent.Task
 import scalaz.stream._
 
-trait Platform
-
 object Ddaq {
   type Input[A] = Process[Task,Sample[A]]
 
@@ -19,6 +17,6 @@ object Ddaq {
   implicit def combinedSample[A](value: Sample.Combined[A]) = Sample(value, value.map(_._2.timestamp).maxBy(_.getMillis))
 }
 
-case class Ddaq(ins: Set[Channel[_]], dash: Dash, presenter: Presenter) {
-  // val in = ins.
+trait Platform {
+  def runDash(ins: Set[Channel[_]], dash: Dash, presenter: Presenter)
 }

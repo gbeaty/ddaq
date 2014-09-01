@@ -3,7 +3,6 @@ package ddaq
 import scalaz._
 import Scalaz._
 
-trait Presenter {
-	val name: String
-	val refreshRate: Float
+abstract class Presenter(val name: String) {
+  def out(in: Set[Channel[_]]): Channel[_]
 }

@@ -14,7 +14,7 @@ object Ddaq extends Build {
     "org.scalaz.stream" %% "scalaz-stream" % "0.4.1",
     "org.specs2" %% "specs2" % "2.4" % "test",
     "com.chuusai" % "shapeless_2.10.4" % "2.0.0",
-    "org.scunits" %% "core" % "0.0.1"
+    "org.scunits" %% "core" % "0.0.1-SNAPSHOT"
   ) ++ jodas
 
   val commonResolvers = Seq(
@@ -43,13 +43,13 @@ object Ddaq extends Build {
 
   def subproject(name: String) = project(name).dependsOn(ddaq)
 
-  lazy val controller = subproject("controller")
+  lazy val presenter = subproject("presenter")
   lazy val logger = subproject("logger")
   lazy val sensor = subproject("sensor")
   lazy val source = subproject("source")
   lazy val channel = subproject("channel")
 
-  def platform(name: String) = project(name).dependsOn(ddaq, controller, logger, sensor, source, channel)
+  def platform(name: String) = project(name).dependsOn(ddaq, presenter, logger, sensor, source, channel)
 
   lazy val test = platform("test")
   lazy val android = platform("android")  
